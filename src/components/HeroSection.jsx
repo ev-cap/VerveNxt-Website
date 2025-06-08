@@ -81,7 +81,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 text-lg font-semibold rounded-full"
+                className="border-white text-purple-600 hover:bg-white hover:text-purple-600 px-8 py-4 text-lg font-semibold rounded-full"
                 onClick={scrollToFeatures}
               >
                 <Play className="mr-2 w-5 h-5" />

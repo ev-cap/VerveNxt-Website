@@ -9,6 +9,7 @@ lerna-debug.log*
 
 # Dependencies
 node_modules
+dist
 dist-ssr
 *.local
 
@@ -40,3 +41,4 @@ coverage/
 # Temporary files
 *.tmp
 *.temp 
+.firebase/
