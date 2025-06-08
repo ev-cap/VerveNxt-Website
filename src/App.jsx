@@ -4,8 +4,6 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/Header';
 import HomePage from '@/pages/HomePage';
 import BlogPage from '@/pages/BlogPage';
-// BlogPostPage is now integrated into BlogPage layout, so direct route might not be needed or can be handled differently.
-// import BlogPostPage from '@/pages/BlogPostPage'; 
 import ComingSoonPage from '@/pages/ComingSoonPage';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/contexts/AuthContext';

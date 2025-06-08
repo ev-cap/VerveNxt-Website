@@ -9,7 +9,7 @@ import { useToast } from '@/components/ui/use-toast';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const { user, signInWithGoogleMock, signOutMock } = useAuth();
+  const { user, signInWithGoogle, signOut, loading } = useAuth();
   const { toast } = useToast();
 
   const navItems = [
@@ -38,26 +38,23 @@ const Header = () => {
     }
   };
 
-  const handleGoogleSignIn = () => {
-    // Placeholder for actual Google Sign-In
-    // signInWithGoogleMock(); // This will be replaced by actual Supabase auth
-    toast({
-      title: "Google Sign-In (Mock)",
-      description: "Supabase integration is required for full Google Sign-In functionality. Please complete Supabase setup.",
-      variant: "default",
-    });
-     // For now, let's simulate a login
-    signInWithGoogleMock();
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+      setIsMenuOpen(false);
+    } catch (error) {
+      console.error('Sign in error:', error);
+    }
   };
 
-  const handleSignOut = () => {
-    signOutMock();
-    toast({
-      title: "Signed Out",
-      description: "You have been successfully signed out.",
-    });
+  const handleSignOut = async () => {
+    try {
+      await signOut();
+      setIsMenuOpen(false);
+    } catch (error) {
+      console.error('Sign out error:', error);
+    }
   };
-
 
   return (
     <motion.header
@@ -92,15 +89,25 @@ const Header = () => {
                 </Link>
               </motion.div>
             ))}
-            {user ? (
+            {loading ? (
+              <div className="w-24 h-8 bg-gray-200 animate-pulse rounded-full"></div>
+            ) : user ? (
               <div className="flex items-center space-x-2">
-                <UserCircle className="w-6 h-6 text-blue-600" />
+                {user.avatar ? (
+                  <img 
+                    src={user.avatar} 
+                    alt={user.name} 
+                    className="w-6 h-6 rounded-full object-cover"
+                  />
+                ) : (
+                  <UserCircle className="w-6 h-6 text-blue-600" />
+                )}
                 <span className="text-sm font-medium text-gray-700">{user.name.split(' ')[0]}</span>
                 <Button variant="outline" size="sm" onClick={handleSignOut} className="rounded-full">Sign Out</Button>
               </div>
             ) : (
               <Button onClick={handleGoogleSignIn} variant="outline" className="rounded-full border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">
-                <LogIn className="mr-2 h-4 w-4" /> Sign In
+                <LogIn className="mr-2 h-4 w-4" /> Sign In with Google
               </Button>
             )}
             <Button asChild className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white px-6 py-2 rounded-full">
@@ -133,10 +140,20 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-             {user ? (
+            {loading ? (
+              <div className="w-full h-8 bg-gray-200 animate-pulse rounded-full mx-4 my-3"></div>
+            ) : user ? (
               <div className="px-4 py-3">
                 <div className="flex items-center space-x-2 mb-2">
-                  <UserCircle className="w-6 h-6 text-blue-600" />
+                  {user.avatar ? (
+                    <img 
+                      src={user.avatar} 
+                      alt={user.name} 
+                      className="w-6 h-6 rounded-full object-cover"
+                    />
+                  ) : (
+                    <UserCircle className="w-6 h-6 text-blue-600" />
+                  )}
                   <span className="text-sm font-medium text-gray-700">{user.name}</span>
                 </div>
                 <Button variant="outline" size="sm" onClick={handleSignOut} className="w-full rounded-full">Sign Out</Button>

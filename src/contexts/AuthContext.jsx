@@ -1,53 +1,78 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useToast } from '@/components/ui/use-toast';
+import { auth, googleProvider } from '@/lib/firebase';
+import { 
+  signInWithPopup, 
+  signOut as firebaseSignOut,
+  onAuthStateChanged
+} from 'firebase/auth';
 
 export const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const { toast } = useToast();
 
-  // Check localStorage for existing mock user on initial load
   useEffect(() => {
-    const storedUser = localStorage.getItem('mockUser');
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
+    // Listen for auth state changes
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in
+        setUser({
+          id: user.uid,
+          name: user.displayName,
+          email: user.email,
+          avatar: user.photoURL
+        });
+      } else {
+        // User is signed out
+        setUser(null);
+      }
+      setLoading(false);
+    });
+
+    // Cleanup subscription
+    return () => unsubscribe();
   }, []);
-  
-  const signInWithGoogleMock = () => {
-    // This is a mock sign-in. Replace with actual Supabase logic.
-    const mockUserData = {
-      id: 'mock-user-123',
-      name: 'Mock User',
-      email: 'mock.user@example.com',
-      avatar: `https://avatar.vercel.sh/mock.user@example.com.svg?text=MU` 
-    };
-    setUser(mockUserData);
-    localStorage.setItem('mockUser', JSON.stringify(mockUserData)); // Store mock user
-    toast({
-      title: "Mock Sign-In Successful!",
-      description: "You're signed in as a mock user.",
-      variant: "success",
-    });
-    console.log("Supabase integration needed for actual Google Sign-In.");
+
+  const signInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      toast({
+        title: "Sign-In Successful!",
+        description: `Welcome, ${result.user.displayName}!`,
+        variant: "success",
+      });
+    } catch (error) {
+      console.error("Error signing in with Google:", error);
+      toast({
+        title: "Sign-In Failed",
+        description: error.message,
+        variant: "destructive",
+      });
+    }
   };
 
-  const signOutMock = () => {
-    setUser(null);
-    localStorage.removeItem('mockUser'); // Remove mock user
-    toast({
-      title: "Signed Out (Mock)",
-      description: "You have been signed out.",
-    });
+  const signOut = async () => {
+    try {
+      await firebaseSignOut(auth);
+      toast({
+        title: "Signed Out",
+        description: "You have been signed out successfully.",
+      });
+    } catch (error) {
+      console.error("Error signing out:", error);
+      toast({
+        title: "Sign-Out Failed",
+        description: error.message,
+        variant: "destructive",
+      });
+    }
   };
-
-  // In a real Supabase setup, you would initialize the Supabase client here
-  // and use its methods for authentication. E.g., supabase.auth.signInWithOAuth(...), supabase.auth.signOut()
-  // Also, you'd listen to onAuthStateChange to keep the user state in sync.
 
   return (
-    <AuthContext.Provider value={{ user, signInWithGoogleMock, signOutMock }}>
+    <AuthContext.Provider value={{ user, signInWithGoogle, signOut, loading }}>
       {children}
     </AuthContext.Provider>
   );
