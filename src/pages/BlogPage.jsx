@@ -12,57 +12,393 @@ import { useAuth } from '@/contexts/AuthContext';
 const blogPostsData = [
   {
     id: 1,
+    title: "A Practical Guide to Maintaining Your Electric Vehicle (EV) in India",
+    excerpt: "With lower running costs and fewer moving parts, EVs are easier to maintain. This guide breaks down everything you need to know about maintaining your EV effectively on Indian roads—through monsoons, potholes, and heatwaves.",
+    content: `<div class="prose prose-lg max-w-none">
+      <p class="lead text-xl text-gray-700 mb-6">Electric vehicles (EVs) are rapidly gaining ground in India—and for good reason. With lower running costs, eco-friendliness, and fewer moving parts, EVs are often easier to maintain than traditional petrol or diesel vehicles.</p>
+      
+      <p class="text-gray-600 mb-8">But 'low maintenance' doesn't mean 'no maintenance'.</p>
+      
+      <p class="text-gray-600 mb-12">To keep your EV running smoothly and efficiently on Indian roads—through monsoons, potholes, heatwaves, and traffic jams—you'll need to follow some specific practices. This guide breaks down everything you need to know about maintaining your EV effectively in India.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🚗</span> 1. Understand What Makes EV Maintenance Different
+      </h2>
+      
+      <div class="bg-blue-50 p-6 rounded-xl mb-8">
+        <p class="font-semibold text-blue-800 mb-4">Electric vehicles have:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>No engine oil or fuel filter</li>
+          <li>Fewer moving parts (no clutch, no gearbox)</li>
+          <li>Less brake wear due to regenerative braking</li>
+        </ul>
+      </div>
+
+      <div class="bg-green-50 p-6 rounded-xl mb-12">
+        <p class="font-semibold text-green-800 mb-4">This means:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Lower servicing frequency</li>
+          <li>Fewer mechanical failures</li>
+          <li>Reduced service bills (up to 40–60% lower than ICE vehicles)</li>
+        </ul>
+      </div>
+
+      <p class="text-gray-600 mb-12">But you still need to be proactive—especially in a country with diverse road conditions and weather like India.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🔋</span> 2. Battery Health: The Heart of Your EV
+      </h2>
+      
+      <p class="text-gray-700 mb-6">In EVs, the battery pack is like the engine. Keeping it healthy ensures:</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+          <p class="font-semibold text-blue-600">Maximum range</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+          <p class="font-semibold text-blue-600">Better performance</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+          <p class="font-semibold text-blue-600">Higher resale value</p>
+        </div>
+      </div>
+
+      <div class="bg-yellow-50 p-6 rounded-xl mb-8">
+        <h3 class="text-xl font-semibold text-yellow-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> Best Battery Maintenance Tips:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Avoid full charges daily. Keep it between 20% and 80% for regular use.</li>
+          <li>Don't let the battery drain to 0% often—it strains the cells.</li>
+          <li>Pre-condition the battery during extreme weather (most EVs offer this feature).</li>
+          <li>Use slow charging (AC) for daily top-ups; fast charging (DC) occasionally for long trips.</li>
+          <li>Park in shade during hot summers to avoid overheating.</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-lg mb-12">
+        <p class="text-blue-800 flex items-center">
+          <span class="mr-2">💡</span> Brands like Tata, MG, and Hyundai offer 8-year/1.6 lakh km warranties for peace of mind.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🛞</span> 3. Tyre Care: Crucial for Indian Roads
+      </h2>
+      
+      <p class="text-gray-700 mb-6">EVs are heavier due to battery packs and produce more torque, which can wear tyres faster—especially on Indian roads.</p>
+
+      <div class="bg-green-50 p-6 rounded-xl mb-12">
+        <h3 class="text-xl font-semibold text-green-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> How to Maintain EV Tyres:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Check tyre pressure monthly (under-inflated tyres drain battery faster).</li>
+          <li>Rotate tyres every 10,000 km to ensure even wear.</li>
+          <li>Inspect tread depth regularly—important during monsoons.</li>
+          <li>Align and balance tyres during service to avoid steering issues.</li>
+        </ul>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🧼</span> 4. Keep the Undercarriage Clean, Especially in Monsoon
+      </h2>
+      
+      <p class="text-gray-700 mb-6">Water, slush, and mud can accumulate and corrode suspension parts or connectors—even though most EVs have IP-rated battery protection.</p>
+
+      <div class="bg-blue-50 p-6 rounded-xl mb-8">
+        <h3 class="text-xl font-semibold text-blue-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> Monsoon Tips:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Pressure wash the underbody once a month during rainy season.</li>
+          <li>Avoid deep waterlogging—some EVs have water-wading limits.</li>
+          <li>Dry parking areas reduce moisture damage.</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-lg mb-12">
+        <p class="text-blue-800 flex items-center">
+          <span class="mr-2">🌧️</span> Check with your dealer about your EV's water ingress protection (usually rated IP67 for Indian EVs).
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">⚙️</span> 5. Regular Software Updates = Better Performance
+      </h2>
+      
+      <p class="text-gray-700 mb-6">EVs are smart vehicles—and updates often fix bugs, improve range, or add features.</p>
+
+      <div class="bg-yellow-50 p-6 rounded-xl mb-8">
+        <h3 class="text-xl font-semibold text-yellow-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> What You Should Do:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Connect your car to Wi-Fi or hotspot regularly to receive OTA (over-the-air) updates.</li>
+          <li>Check the manufacturer's app for notifications.</li>
+          <li>Ask for manual updates during service visits if you don't have OTA.</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-lg mb-12">
+        <p class="text-blue-800 flex items-center">
+          <span class="mr-2">📲</span> For example, Tata updates Nexon EV software to optimize regen braking and battery management.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🛠️</span> 6. Schedule Annual Health Checks
+      </h2>
+      
+      <p class="text-gray-700 mb-6">Even though EVs require fewer service visits, an annual checkup is crucial.</p>
+
+      <div class="bg-green-50 p-6 rounded-xl mb-8">
+        <h3 class="text-xl font-semibold text-green-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> What Gets Checked:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Battery health and cooling system</li>
+          <li>Electrical connectors and wiring</li>
+          <li>Brake pads and fluids</li>
+          <li>Tyres, wipers, and suspension</li>
+          <li>HVAC system (essential for Indian heat)</li>
+        </ul>
+      </div>
+
+      <p class="text-gray-700 mb-12">Many Indian EV makers offer scheduled servicing packages (e.g., Tata EZ Service or MG Shield) that keep your vehicle covered for 3–5 years.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">⚡</span> 7. Charging Equipment Care
+      </h2>
+      
+      <p class="text-gray-700 mb-6">Your home charger or portable cable is essential for day-to-day use. Keep it safe.</p>
+
+      <div class="bg-yellow-50 p-6 rounded-xl mb-8">
+        <h3 class="text-xl font-semibold text-yellow-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> Charging Safety Tips:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Install a surge protector for your home charger (especially during thunderstorms).</li>
+          <li>Keep the charging area dry and ventilated.</li>
+          <li>Avoid extension cords—they can cause overheating.</li>
+          <li>Clean charger ports with a dry cloth—no water or spray!</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-lg mb-12">
+        <p class="text-blue-800 flex items-center">
+          <span class="mr-2">🔌</span> Most OEMs provide a home charger unit with proper installation through certified technicians.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🧽</span> 8. Interior & Exterior Cleaning for Indian Conditions
+      </h2>
+      
+      <p class="text-gray-700 mb-6">Dust, humidity, and heat can affect the look and feel of your EV if not maintained.</p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="bg-blue-50 p-6 rounded-xl">
+          <h3 class="text-xl font-semibold text-blue-800 mb-4 flex items-center">
+            <span class="mr-2">✅</span> Interior Tips:
+          </h3>
+          <ul class="list-disc list-inside space-y-3 text-gray-700">
+            <li>Use sunshades to protect dashboard and seats from UV damage.</li>
+            <li>Clean the touchscreen and digital displays with a microfiber cloth.</li>
+            <li>Vacuum regularly to avoid dust buildup (especially in Delhi NCR or Bengaluru).</li>
+          </ul>
+        </div>
+        <div className="bg-green-50 p-6 rounded-xl">
+          <h3 class="text-xl font-semibold text-green-800 mb-4 flex items-center">
+            <span class="mr-2">✅</span> Exterior Tips:
+          </h3>
+          <ul class="list-disc list-inside space-y-3 text-gray-700">
+            <li>Wash once a week with water-resistant wax polish.</li>
+            <li>Check door seals to prevent moisture leaks.</li>
+            <li>Use ceramic coating to protect paint in harsh sun areas like Rajasthan or Chennai.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🔁</span> 9. Keep Battery Degradation in Check
+      </h2>
+      
+      <p class="text-gray-700 mb-6">Battery degradation is slow but real. After 5–6 years, you may lose 10–20% of capacity depending on use.</p>
+
+      <div class="bg-yellow-50 p-6 rounded-xl mb-8">
+        <h3 class="text-xl font-semibold text-yellow-800 mb-4 flex items-center">
+          <span class="mr-2">✅</span> Tips to Reduce Battery Aging:
+        </h3>
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Avoid charging to 100% unless needed.</li>
+          <li>Don't fast-charge daily—it heats the battery.</li>
+          <li>Monitor battery reports during annual service.</li>
+          <li>Use eco mode during heavy traffic to avoid energy spikes.</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-lg mb-12">
+        <p class="text-blue-800 flex items-center">
+          <span class="mr-2">📊</span> EVs like the MG ZS EV and Tata Nexon EV allow users to track battery health via their app.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">📦</span> 10. Spare Parts Availability & Service Network
+      </h2>
+      
+      <p class="text-gray-700 mb-6">EV spare parts are fewer, but you should still be aware of:</p>
+
+      <div class="bg-blue-50 p-6 rounded-xl mb-8">
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Availability of headlamps, bumpers, infotainment parts</li>
+          <li>Battery module or BMS unit replacement (rare, but costly if out of warranty)</li>
+          <li>Motor cooling fan or AC compressor (check during annual service)</li>
+        </ul>
+      </div>
+
+      <p class="text-gray-700 mb-12">Stick with brands that have local service centers in your state. Tata and MG currently have the widest EV service coverage in India.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🧠</span> Bonus: Stay Connected with EV Communities
+      </h2>
+      
+      <p class="text-gray-700 mb-6">Indian EV owners are a helpful bunch. Join local WhatsApp or Telegram groups to:</p>
+
+      <div class="bg-green-50 p-6 rounded-xl mb-8">
+        <ul class="list-disc list-inside space-y-3 text-gray-700">
+          <li>Share charger locations</li>
+          <li>Report service issues</li>
+          <li>Discuss updates and features</li>
+          <li>Get discounts on accessories</li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-lg mb-12">
+        <p class="text-blue-800 flex items-center">
+          <span class="mr-2">👥</span> Communities like PluginIndia, r/IndianEVs on Reddit, and Facebook groups are highly active.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">✅</span> Final Checklist for Maintaining Your EV in India
+      </h2>
+
+      <div className="overflow-x-auto mb-12">
+        <table className="min-w-full bg-white rounded-xl shadow-sm border-2 ">
+          <thead>
+            <tr className="bg-gray-50">
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Task</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Frequency</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tip</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Battery health check</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Every 6–12 months</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Avoid deep discharges</td>
+            </tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Tyre rotation</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Every 10,000 km</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Maintain pressure</td>
+            </tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Software updates</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">As available</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">OTA or service center</td>
+            </tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Brake inspection</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Annually</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Regenerative braking wears less</td>
+            </tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Underbody cleaning</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Monthly in monsoon</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Prevent rust or clogging</td>
+            </tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Charger check</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Monthly</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Look for frayed cables</td>
+            </tr>
+            <tr>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Cabin & infotainment care</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Weekly</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Use microfiber cloths</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span className="mr-3">🏁</span> Final Thoughts: Low Maintenance ≠ No Maintenance
+      </h2>
+      
+      <p className="text-gray-700 mb-6">EVs offer a smoother, quieter, and more economical driving experience—especially in India. But a little care goes a long way in preserving battery life, improving resale value, and ensuring your EV delivers peak performance every day.</p>
+    </div>`,
+    author: "Pravin Sharma",
+    date: "June 8, 2025",
+    category: "EV Maintenance",
+    imageUrl: "/images/blog/ev-maintenance-guide.jpg",
+    slug: "practical-guide-maintaining-ev-india"
+  },
+  {
+    id: 2,
     title: "The Future of EV Charging: Trends to Watch in 2025",
     excerpt: "As electric vehicles become mainstream, charging technology is evolving rapidly. Discover the key innovations shaping the future...",
     content: "<p>The world of electric vehicles (EVs) is advancing at an unprecedented pace. As more drivers make the switch to electric, the demand for efficient, accessible, and intelligent charging solutions is skyrocketing. In 2025, we anticipate several key trends that will redefine the EV charging landscape.</p><h2>Smarter Charging Networks</h2><p>Expect to see more AI-powered charging networks that optimize energy distribution, predict demand, and offer dynamic pricing. These networks will integrate seamlessly with smart grids, contributing to overall energy stability.</p><h2>Ultra-Fast Charging (UFC)</h2><p>While fast charging is already available, 2025 will likely see a wider deployment of ultra-fast chargers capable of adding hundreds of miles of range in just a few minutes. This will be crucial for long-distance travel and reducing range anxiety.</p><h2>Wireless EV Charging</h2><p>Inductive charging technology is maturing. We may see more pilot programs and even commercial availability of wireless charging pads for homes and public spaces, offering unparalleled convenience.</p><h2>Vehicle-to-Grid (V2G) Technology</h2><p>EVs will increasingly become mobile energy storage units. V2G technology will allow EV owners to sell excess energy back to the grid, supporting grid stability and potentially earning them income.</p><p>At VerveNxt, we are closely monitoring these trends and actively working on incorporating cutting-edge solutions into the UNAD app to ensure our users always have access to the best and most convenient charging experiences.</p>",
     author: "Jane Doe",
     date: "June 1, 2025",
     category: "EV Technology",
-    imageUrl: "A futuristic EV charging station with sleek design and glowing lights",
+    imageUrl: "/images/blog/ev-charging-future.jpg",
     slug: "future-of-ev-charging"
   },
   {
-    id: 2,
+    id: 3,
     title: "UNAD's Mission: Making Sustainable Travel a Reality",
     excerpt: "Learn how VerveNxt is pioneering solutions to make EV ownership seamless and contribute to a greener planet through the UNAD app.",
     content: "<p>Our core mission at VerveNxt is to accelerate the transition to sustainable transportation. We believe that electric vehicles are a cornerstone of this transition, but their adoption can be hindered by complexities in the charging ecosystem. That's where UNAD comes in.</p><h2>Simplifying the Complex</h2><p>UNAD is designed to be the single point of contact for all EV charging needs. By aggregating multiple charging networks into one intuitive platform, we eliminate the need for users to juggle various apps and payment methods. This simplification is key to making EV ownership more attractive and less daunting for a wider audience.</p><h2>Promoting Green Energy</h2><p>Beyond convenience, UNAD aims to guide users towards charging stations powered by renewable energy sources whenever possible. We are also exploring features that will allow users to track their carbon footprint reduction and understand their positive environmental impact.</p><p>Join us on this journey as we build a future where sustainable travel is not just a choice, but a delightful and effortless experience for everyone.</p>",
     author: "John Smith",
     date: "May 28, 2025",
     category: "Sustainability",
-    imageUrl: "A scenic view of a winding road through mountains with an EV driving on it",
+    imageUrl: "/images/blog/sustainable-travel.jpg",
     slug: "unad-mission-sustainability"
   },
   {
-    id: 3,
+    id: 4,
     title: "Top 5 Benefits of Using an EV Charging Aggregator App",
     excerpt: "Tired of juggling multiple apps? An aggregator like UNAD simplifies your charging experience. Here's how...",
     content: "<p>Electric vehicle (EV) charging aggregator apps like UNAD are revolutionizing how EV drivers find and use charging stations. Instead of managing multiple accounts and apps for different charging networks, an aggregator provides a unified solution. Here are the top 5 benefits:</p><ol><li><strong>One App for All Networks:</strong> Access a vast network of charging stations from various providers through a single interface. No more app-switching!</li><li><strong>Real-Time Availability and Status:</strong> Get live updates on charger availability, type, and operational status before you arrive, saving time and frustration.</li><li><strong>Simplified Payments:</strong> Link your payment method once and pay seamlessly across different networks, often with integrated payment systems.</li><li><strong>Efficient Route Planning:</strong> Many aggregators offer route planning features that incorporate necessary charging stops, making long-distance EV travel easier.</li><li><strong>Personalized Experience:</strong> Save favorite stations, view charging history, and sometimes even get recommendations based on your vehicle and preferences.</li></ol><p>UNAD aims to deliver all these benefits and more, ensuring that your EV charging experience is as smooth as your drive.</p>",
     author: "Alex Green",
     date: "May 15, 2025",
     category: "EV Lifestyle",
-    imageUrl: "A person happily using a mobile app to find an EV charging station",
+    imageUrl: "/images/blog/ev-aggregator-benefits.jpg",
     slug: "benefits-ev-aggregator"
   },
   {
-    id: 4,
+    id: 5,
     title: "Navigating Range Anxiety: Tips for New EV Owners",
     excerpt: "Worried about running out of charge? We share practical tips and how UNAD helps you drive with confidence.",
     content: "<p>Range anxiety is a common concern for new electric vehicle (EV) owners. However, with a bit of planning and the right tools, it's easily managed. Here are some tips:...</p>",
     author: "Sarah Miller",
     date: "June 5, 2025",
     category: "EV Lifestyle",
-    imageUrl: "An EV dashboard showing ample battery range",
+    imageUrl: "/images/blog/range-anxiety-tips.jpg",
     slug: "navigating-range-anxiety"
   },
   {
-    id: 5,
+    id: 6,
     title: "The Environmental Impact of EVs: A Closer Look",
     excerpt: "Electric vehicles are a key part of a sustainable future. We delve into the real environmental benefits.",
     content: "<p>Switching to an electric vehicle (EV) is a significant step towards reducing your carbon footprint. Let's explore the environmental benefits in detail:...</p>",
     author: "Dr. Eco Friend",
     date: "June 10, 2025",
     category: "Sustainability",
-    imageUrl: "Lush green forest with a clean energy symbol",
+    imageUrl: "/images/blog/ev-environmental-impact.jpg",
     slug: "environmental-impact-evs"
   }
 ];
@@ -121,7 +457,17 @@ const CommentsSection = ({ postId }) => {
       {user ? (
         <form onSubmit={handleCommentSubmit} className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-md">
           <div className="flex items-start space-x-4">
-            <img-replace alt={user.name} className="w-12 h-12 rounded-full object-cover" />
+            {user.avatar ? (
+              <img 
+                src={user.avatar} 
+                alt={user.name} 
+                className="w-12 h-12 rounded-full object-cover"
+              />
+            ) : (
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold text-lg">
+                {user.name.charAt(0).toUpperCase()}
+              </div>
+            )}
             <div className="flex-1">
               <Textarea
                 value={comment}
@@ -154,7 +500,17 @@ const CommentsSection = ({ postId }) => {
             transition={{ duration: 0.4 }}
             className="flex items-start space-x-4 p-5 bg-white rounded-xl shadow-lg"
           >
-            <img-replace alt={c.author} className="w-10 h-10 rounded-full object-cover border-2 border-blue-200" />
+            {c.avatar ? (
+              <img 
+                src={c.avatar} 
+                alt={c.author} 
+                className="w-10 h-10 rounded-full object-cover border-2 border-blue-200"
+              />
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold text-sm">
+                {c.author.charAt(0).toUpperCase()}
+              </div>
+            )}
             <div className="flex-1">
               <div className="flex items-center justify-between mb-1">
                 <p className="font-semibold text-blue-700">{c.author}</p>
@@ -249,9 +605,11 @@ const BlogPage = () => {
           </div>
 
           <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl mb-10">
-            <img-replace
+            <img
+              src={post.imageUrl || "https://images.unsplash.com/photo-1617704548623-340376564e68?q=80&w=2070&auto=format&fit=crop"}
+              alt={post.title}
               className="w-full h-full object-cover"
-              alt={post.title} />
+            />
           </div>
           
           <article className="prose prose-lg max-w-none text-gray-800 leading-relaxed selection:bg-yellow-200 selection:text-yellow-800"
