@@ -2,7 +2,8 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 import { useToast } from '@/components/ui/use-toast';
 import { auth, googleProvider } from '@/lib/firebase';
 import { 
-  signInWithPopup, 
+  signInWithRedirect, 
+  getRedirectResult,
   signOut as firebaseSignOut,
   onAuthStateChanged
 } from 'firebase/auth';
@@ -15,6 +16,24 @@ export const AuthProvider = ({ children }) => {
   const { toast } = useToast();
 
   useEffect(() => {
+    // Handle redirect result
+    getRedirectResult(auth).then((result) => {
+      if (result) {
+        toast({
+          title: "Sign-In Successful!",
+          description: `Welcome, ${result.user.displayName}!`,
+          variant: "success",
+        });
+      }
+    }).catch((error) => {
+      console.error("Error getting redirect result:", error);
+      toast({
+        title: "Sign-In Failed",
+        description: error.message,
+        variant: "destructive",
+      });
+    });
+
     // Listen for auth state changes
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -34,16 +53,11 @@ export const AuthProvider = ({ children }) => {
 
     // Cleanup subscription
     return () => unsubscribe();
-  }, []);
+  }, [toast]);
 
   const signInWithGoogle = async () => {
     try {
-      const result = await signInWithPopup(auth, googleProvider);
-      toast({
-        title: "Sign-In Successful!",
-        description: `Welcome, ${result.user.displayName}!`,
-        variant: "success",
-      });
+      await signInWithRedirect(auth, googleProvider);
     } catch (error) {
       console.error("Error signing in with Google:", error);
       toast({

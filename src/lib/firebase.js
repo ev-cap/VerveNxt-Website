@@ -19,5 +19,7 @@ export const googleProvider = new GoogleAuthProvider();
 
 // Configure Google provider
 googleProvider.setCustomParameters({
-  prompt: 'select_account'
+  prompt: 'select_account',
+  // Add the redirect URI that matches your Firebase Console configuration
+  redirect_uri: window.location.origin + '/__/auth/handler'
 }); 
