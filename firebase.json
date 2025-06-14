@@ -12,8 +12,5 @@
         "destination": "https://firebasestorage.googleapis.com/v0/b/vervenxt-website.appspot.com/o/**"
       }
     ]
-  },
-  "storage": {
-    "rules": "storage.rules"
   }
 }
