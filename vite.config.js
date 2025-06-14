@@ -217,6 +217,8 @@ export default defineConfig({
 				'@babel/generator',
 				'@babel/types'
 			]
-		}
+		},
+		assetsDir: 'assets',
+		copyPublicDir: true
 	}
 });
