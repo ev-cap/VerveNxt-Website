@@ -2,22 +2,16 @@ import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
 const storage = getStorage();
 const BUCKET_URL = 'gs://vervenxt-website.firebasestorage.app';
+const PUBLIC_BASE_URL = 'https://storage.googleapis.com/vervenxt-website.appspot.com';
 
-export const getImageUrl = async (path) => {
-  try {
-    const imageRef = ref(storage, path);
-    const url = await getDownloadURL(imageRef);
-    return url;
-  } catch (error) {
-    console.error('Error getting image URL:', error);
-    return null;
-  }
+export const getPublicImageUrl = (path) => {
+  return `${PUBLIC_BASE_URL}/${path}`;
 };
 
-export const getCarsImageUrl = async (imageName) => {
-  return getImageUrl(`cars/${imageName}`);
+export const getCarsImageUrl = (imageName) => {
+  return getPublicImageUrl(`cars/${imageName}`);
 };
 
-export const getBikesImageUrl = async (imageName) => {
-  return getImageUrl(`bikes/${imageName}`);
+export const getBikesImageUrl = (imageName) => {
+  return getPublicImageUrl(`bikes/${imageName}`);
 }; 
