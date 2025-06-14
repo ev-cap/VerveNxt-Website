@@ -2,10 +2,12 @@ import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
 const storage = getStorage();
 const BUCKET_URL = 'gs://vervenxt-website.firebasestorage.app';
-const PUBLIC_BASE_URL = 'https://vervenxt.com/images';
+const PUBLIC_BASE_URL = 'https://firebasestorage.googleapis.com/v0/b/vervenxt-website.firebasestorage.app/o';
 
 export const getPublicImageUrl = (path) => {
-  return `${PUBLIC_BASE_URL}/${path}`;
+  // Encode the path to handle special characters
+  const encodedPath = encodeURIComponent(path);
+  return `${PUBLIC_BASE_URL}/${encodedPath}?alt=media`;
 };
 
 export const getCarsImageUrl = (imageName) => {
