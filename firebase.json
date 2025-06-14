@@ -5,6 +5,16 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/images/cars/**",
+        "destination": "https://storage.googleapis.com/vervenxt-website.appspot.com/cars/**"
+      },
+      {
+        "source": "/images/bikes/**",
+        "destination": "https://storage.googleapis.com/vervenxt-website.appspot.com/bikes/**"
+      }
     ]
   },
   "storage": {
