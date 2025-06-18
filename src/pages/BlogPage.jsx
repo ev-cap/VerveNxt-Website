@@ -11,6 +11,64 @@ import { useAuth } from '@/contexts/AuthContext';
 // Sample blog posts data (in a real app, this would come from an API or CMS)
 const blogPostsData = [
   {
+    id: 7,
+    title: "Mastering the Electric Drive: A Guide to the Effective Use of Electric Vehicles (EVs)",
+    excerpt: "Electric vehicles are transforming how we travel. Learn to charge, drive, and maintain your EV for maximum efficiency.",
+    content: `<div class="prose prose-lg max-w-none">
+      <p class="lead text-xl text-gray-700 mb-6">Electric vehicles (EVs) are transforming the way we drive, save money, and reduce our environmental impact. Whether you're new to EVs or considering the switch, these tips will help you get the most out of your electric ride.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🔋</span> 1. Smart Charging: Timing Is Everything
+      </h2>
+      <p class="text-gray-700 mb-6">Charge during off-peak hours, avoid daily 100% charges, and consider a Level 2 charger at home to prolong battery life and save money.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🚦</span> 2. Drive Efficiently to Maximise Range
+      </h2>
+      <p class="text-gray-700 mb-6">Use regenerative braking, avoid aggressive acceleration, and maintain steady speeds to make every kWh count.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🗺️</span> 3. Plan Your Routes with Charging in Mind
+      </h2>
+      <p class="text-gray-700 mb-6">Apps like PlugShare and ABRP help you locate chargers and plan long trips with confidence.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🌦️</span> 4. Adapt to Weather Conditions
+      </h2>
+      <p class="text-gray-700 mb-6">Precondition your EV while plugged in, park indoors when possible, and use seat heaters to conserve battery during cold weather.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🛠️</span> 5. Maintain Your EV for Long-Term Reliability
+      </h2>
+      <p class="text-gray-700 mb-6">Check tyre pressure, monitor brake wear, and keep an eye on battery health to ensure your EV runs smoothly for years.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🏡</span> 6. Optimise Home Charging Setup
+      </h2>
+      <p class="text-gray-700 mb-6">Install a dedicated Level 2 charger and use a surge protector to make daily charging safe and convenient.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🌍</span> 7. Be a Sustainable EV Driver
+      </h2>
+      <p class="text-gray-700 mb-6">Whenever possible, power your EV with renewable energy and support local clean-energy initiatives.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">🧠</span> 8. Stay Informed and Connected
+      </h2>
+      <p class="text-gray-700 mb-6">Keep up with software updates and join EV communities to learn about the latest developments.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+        <span class="mr-3">⚡</span> Final Thoughts: Drive Smart, Drive Electric
+      </h2>
+      <p class="text-gray-700 mb-6">By embracing efficient habits and staying informed, you can maximise your EV's potential and help build a cleaner future.</p>
+    </div>`,
+    author: "VerveNxt Team",
+    date: "June 15, 2025",
+    category: "EV Lifestyle",
+    imageUrl: "/images/blog/mastering-electric-drive.jpg",
+    slug: "mastering-electric-drive-guide"
+  },
+  {
     id: 1,
     title: "A Practical Guide to Maintaining Your Electric Vehicle (EV) in India",
     excerpt: "With lower running costs and fewer moving parts, EVs are easier to maintain. This guide breaks down everything you need to know about maintaining your EV effectively on Indian roads—through monsoons, potholes, and heatwaves.",
