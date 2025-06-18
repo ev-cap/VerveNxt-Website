@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import HomePage from '@/pages/HomePage';
 import BlogPage from '@/pages/BlogPage';
 import ComingSoonPage from '@/pages/ComingSoonPage';
+import TermsPage from '@/pages/TermsPage';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/contexts/AuthContext';
 
@@ -31,7 +32,7 @@ function App() {
               <Route path="/api" element={<ComingSoonPage pageTitle="API Access" />} />
               <Route path="/help" element={<ComingSoonPage pageTitle="Help Center" />} />
               <Route path="/privacy" element={<ComingSoonPage pageTitle="Privacy Policy" />} />
-              <Route path="/terms" element={<ComingSoonPage pageTitle="Terms of Service" />} />
+              <Route path="/terms" element={<TermsPage />} />
             </Routes>
           </main>
           <Footer />
