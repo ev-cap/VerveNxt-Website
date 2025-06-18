@@ -6,6 +6,16 @@ import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
+    id: "7",
+    title: "Mastering the Electric Drive: A Guide to the Effective Use of Electric Vehicles (EVs)",
+    excerpt: "Electric vehicles are transforming how we travel. Learn to charge, drive, and maintain your EV for maximum efficiency.",
+    author: "VerveNxt Team",
+    date: "June 15, 2025",
+    category: "EV Lifestyle",
+    imageUrl: "An EV driving smoothly along a scenic road",
+    slug: "mastering-electric-drive-guide"
+  },
+  {
     id: "1",
     title: "The Future of EV Charging: Trends to Watch in 2025",
     excerpt: "As electric vehicles become mainstream, charging technology is evolving rapidly. Discover the key innovations shaping the future...",
