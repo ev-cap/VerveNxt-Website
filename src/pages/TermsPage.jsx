@@ -2,11 +2,17 @@ import React from 'react';
 
 const TermsPage = () => {
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-br from-slate-100 to-sky-100">
-      <div className="container mx-auto px-6 py-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-gradient mb-8">Terms of Service</h1>
-        <article className="prose prose-slate max-w-none">
-          <p><strong>Last updated: [Insert Date]</strong></p>
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Header */}
+      <div className="bg-gradient-to-r from-indigo-500 to-cyan-600 py-20 text-center text-white">
+        <h1 className="text-5xl font-bold mb-2">Terms of Use</h1>
+        <p className="text-lg">Last updated: June 19, 2025</p>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex-grow bg-slate-50 pb-20 -mt-16">
+        <div className="container mx-auto max-w-4xl bg-white rounded-xl shadow-lg px-6 py-10">
+          <article className="prose prose-slate max-w-none">
           <p>Welcome to Vervenxt! These Terms of Service ("Terms") govern your use of:</p>
           <p>Vervenxt.com (the “Website”), operated by Vervenxt Innovations Pvt. Ltd. ("Vervenxt", "we", "us", or "our"),</p>
           <p>and our flagship platform/app, UNAD ("App" or "UNAD").</p>
@@ -16,7 +22,7 @@ const TermsPage = () => {
           <p>By using our services, you confirm that you are at least 18 years of age or have the legal capacity to enter into a binding contract. If you are using the services on behalf of an organization, you represent and warrant that you have the authority to bind that organization.</p>
 
           <h2>2. Services Overview</h2>
-          <p>Vervenxt provides digital services through its platform and mobile applications. UNAD is a productivity and insight-enhancing platform designed to assist users with [brief description, e.g., intelligent learning, creative work, AI tools, etc.].</p>
+          <p>Vervenxt provides digital services through its platform and mobile applications. UNAD is the ultimate EV charging station aggregator, designed to make your charging experience seamless and delightful.</p>
 
           <h2>3. Account Registration</h2>
           <p>To access certain features of UNAD, you may be required to create an account. You agree to:</p>
@@ -74,13 +80,10 @@ const TermsPage = () => {
 
           <h2>13. Governing Law</h2>
           <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of Mumbai, Maharashtra.</p>
-
-          <h2>14. Contact Us</h2>
-          <p>If you have any questions about these Terms, please contact us at:</p>
-          <p>Vervenxt Innovations Pvt. Ltd.<br />[Insert Registered Office Address]<br />Email: [Insert support@vervenxt.com or appropriate address]<br />Website: <a href="https://vervenxt.com">https://vervenxt.com</a></p>
         </article>
       </div>
     </div>
+  </div>
   );
 };
 
