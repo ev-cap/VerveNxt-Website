@@ -41,3 +41,6 @@ coverage/
 *.tmp
 *.temp 
 .firebase/
+
+#Ignore cursor AI rules
+.cursor/

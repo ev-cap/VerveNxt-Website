@@ -61,11 +61,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <a href="tel:+15551234567" className="text-gray-300 hover:text-green-400">+1 (555) 123-4567</a>
+                <a href="tel:+91 91 3640 1982" className="text-gray-300 hover:text-green-400">+91 913 640 1982</a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300">San Francisco, CA</span>
+                <span className="text-gray-300">Mumbai, Maharashtra</span>
               </div>
             </div>
           </motion.div>
@@ -162,7 +162,7 @@ const Footer = () => {
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} VerveNxt Technology. All rights reserved.
+            © {new Date().getFullYear()} VerveNxt Solutions Private Limited. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
             Made with 💚 for a sustainable future
