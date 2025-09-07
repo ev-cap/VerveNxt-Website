@@ -7,6 +7,7 @@ import BlogPage from '@/pages/BlogPage';
 import ComingSoonPage from '@/pages/ComingSoonPage';
 import TermsPage from '@/pages/TermsPage';
 import PrivacyPage from '@/pages/PrivacyPage';
+import ContactPage from '@/pages/ContactPage';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/contexts/AuthContext';
 
@@ -26,7 +27,7 @@ function App() {
               <Route path="/blog/:slug" element={<BlogPage />} /> 
               <Route path="/the-rool-app" element={<ComingSoonPage pageTitle="The ROOL App" />} />
               <Route path="/our-mission" element={<ComingSoonPage pageTitle="Our Mission" />} />
-              <Route path="/contact" element={<ComingSoonPage pageTitle="Contact Us" />} />
+              <Route path="/contact" element={<ContactPage />} />
               <Route path="/careers" element={<ComingSoonPage pageTitle="Careers" />} />
               <Route path="/press" element={<ComingSoonPage pageTitle="Press Kit" />} />
               <Route path="/pricing" element={<ComingSoonPage pageTitle="Pricing" />} />
