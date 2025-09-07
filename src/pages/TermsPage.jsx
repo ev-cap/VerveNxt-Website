@@ -15,17 +15,17 @@ const TermsPage = () => {
           <article className="max-w-none">
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">Welcome to Vervenxt! These Terms of Service ("Terms") govern your use of:</p>
             <p className="text-gray-700 mb-4 leading-relaxed">Vervenxt.com (the "Website"), operated by Vervenxt Innovations Pvt. Ltd. ("Vervenxt", "we", "us", or "our"),</p>
-            <p className="text-gray-700 mb-4 leading-relaxed">and our flagship platform/app, UNAD ("App" or "UNAD").</p>
+            <p className="text-gray-700 mb-4 leading-relaxed">and our flagship platform/app, ROOL ("App" or "ROOL").</p>
             <p className="text-gray-700 mb-6 leading-relaxed">By accessing or using our Website or App, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use our services.</p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-700 mb-4 leading-relaxed">By using our services, you confirm that you are at least 18 years of age or have the legal capacity to enter into a binding contract. If you are using the services on behalf of an organization, you represent and warrant that you have the authority to bind that organization.</p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Services Overview</h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">Vervenxt provides digital services through its platform and mobile applications. UNAD is the ultimate EV charging station aggregator, designed to make your charging experience seamless and delightful.</p>
+            <p className="text-gray-700 mb-4 leading-relaxed">Vervenxt provides digital services through its platform and mobile applications. ROOL is the ultimate EV charging station aggregator, designed to make your charging experience seamless and delightful.</p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Account Registration</h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">To access certain features of UNAD, you may be required to create an account. You agree to:</p>
+            <p className="text-gray-700 mb-4 leading-relaxed">To access certain features of ROOL, you may be required to create an account. You agree to:</p>
             <ul className="list-disc list-inside space-y-2 mb-6 text-gray-700">
               <li>Provide accurate, current, and complete information.</li>
               <li>Maintain the security of your password.</li>
@@ -42,7 +42,7 @@ const TermsPage = () => {
             </ul>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Subscription, Payments, and Billing</h2>
-            <p className="text-gray-700 mb-4 leading-relaxed">Some features of UNAD may be available only through paid subscriptions.</p>
+            <p className="text-gray-700 mb-4 leading-relaxed">Some features of ROOL may be available only through paid subscriptions.</p>
             <ul className="list-disc list-inside space-y-2 mb-6 text-gray-700">
               <li>Prices and payment terms are outlined on the platform and are subject to change with prior notice.</li>
               <li>You authorize us to charge the applicable fees to your payment method.</li>

@@ -12,8 +12,8 @@ const Footer = () => {
       { name: 'Press Kit', href: '/press', isRouterLink: true }
     ],
     product: [
-      { name: 'UNAD App', href: '/the-unad-app', isRouterLink: true },
-      { name: 'Features', href: '/the-unad-app#features', isRouterLink: true }, // Assuming features are on UNAD app page
+      { name: 'ROOL App', href: '/the-rool-app', isRouterLink: true },
+      { name: 'Features', href: '/the-rool-app#features', isRouterLink: true }, // Assuming features are on ROOL app page
       { name: 'Pricing', href: '/pricing', isRouterLink: true },
       { name: 'API Access', href: '/api', isRouterLink: true }
     ],
@@ -116,7 +116,7 @@ const Footer = () => {
           >
             <h3 className="text-lg font-semibold mb-4 text-white">Stay Updated</h3>
             <p className="text-gray-300 mb-4">
-              Get the latest news about UNAD and the future of EV charging.
+              Get the latest news about ROOL and the future of EV charging.
             </p>
             
             <form onSubmit={(e) => e.preventDefault()} className="space-y-3">

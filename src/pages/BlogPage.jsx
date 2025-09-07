@@ -408,7 +408,7 @@ const blogPostsData = [
     id: 2,
     title: "The Future of EV Charging: Trends to Watch in 2025",
     excerpt: "As electric vehicles become mainstream, charging technology is evolving rapidly. Discover the key innovations shaping the future...",
-    content: "<p>The world of electric vehicles (EVs) is advancing at an unprecedented pace. As more drivers make the switch to electric, the demand for efficient, accessible, and intelligent charging solutions is skyrocketing. In 2025, we anticipate several key trends that will redefine the EV charging landscape.</p><h2>Smarter Charging Networks</h2><p>Expect to see more AI-powered charging networks that optimize energy distribution, predict demand, and offer dynamic pricing. These networks will integrate seamlessly with smart grids, contributing to overall energy stability.</p><h2>Ultra-Fast Charging (UFC)</h2><p>While fast charging is already available, 2025 will likely see a wider deployment of ultra-fast chargers capable of adding hundreds of miles of range in just a few minutes. This will be crucial for long-distance travel and reducing range anxiety.</p><h2>Wireless EV Charging</h2><p>Inductive charging technology is maturing. We may see more pilot programs and even commercial availability of wireless charging pads for homes and public spaces, offering unparalleled convenience.</p><h2>Vehicle-to-Grid (V2G) Technology</h2><p>EVs will increasingly become mobile energy storage units. V2G technology will allow EV owners to sell excess energy back to the grid, supporting grid stability and potentially earning them income.</p><p>At VerveNxt, we are closely monitoring these trends and actively working on incorporating cutting-edge solutions into the UNAD app to ensure our users always have access to the best and most convenient charging experiences.</p>",
+    content: "<p>The world of electric vehicles (EVs) is advancing at an unprecedented pace. As more drivers make the switch to electric, the demand for efficient, accessible, and intelligent charging solutions is skyrocketing. In 2025, we anticipate several key trends that will redefine the EV charging landscape.</p><h2>Smarter Charging Networks</h2><p>Expect to see more AI-powered charging networks that optimize energy distribution, predict demand, and offer dynamic pricing. These networks will integrate seamlessly with smart grids, contributing to overall energy stability.</p><h2>Ultra-Fast Charging (UFC)</h2><p>While fast charging is already available, 2025 will likely see a wider deployment of ultra-fast chargers capable of adding hundreds of miles of range in just a few minutes. This will be crucial for long-distance travel and reducing range anxiety.</p><h2>Wireless EV Charging</h2><p>Inductive charging technology is maturing. We may see more pilot programs and even commercial availability of wireless charging pads for homes and public spaces, offering unparalleled convenience.</p><h2>Vehicle-to-Grid (V2G) Technology</h2><p>EVs will increasingly become mobile energy storage units. V2G technology will allow EV owners to sell excess energy back to the grid, supporting grid stability and potentially earning them income.</p><p>At VerveNxt, we are closely monitoring these trends and actively working on incorporating cutting-edge solutions into the ROOL app to ensure our users always have access to the best and most convenient charging experiences.</p>",
     author: "Jane Doe",
     date: "June 1, 2025",
     category: "EV Technology",
@@ -417,20 +417,20 @@ const blogPostsData = [
   },
   {
     id: 3,
-    title: "UNAD's Mission: Making Sustainable Travel a Reality",
-    excerpt: "Learn how VerveNxt is pioneering solutions to make EV ownership seamless and contribute to a greener planet through the UNAD app.",
-    content: "<p>Our core mission at VerveNxt is to accelerate the transition to sustainable transportation. We believe that electric vehicles are a cornerstone of this transition, but their adoption can be hindered by complexities in the charging ecosystem. That's where UNAD comes in.</p><h2>Simplifying the Complex</h2><p>UNAD is designed to be the single point of contact for all EV charging needs. By aggregating multiple charging networks into one intuitive platform, we eliminate the need for users to juggle various apps and payment methods. This simplification is key to making EV ownership more attractive and less daunting for a wider audience.</p><h2>Promoting Green Energy</h2><p>Beyond convenience, UNAD aims to guide users towards charging stations powered by renewable energy sources whenever possible. We are also exploring features that will allow users to track their carbon footprint reduction and understand their positive environmental impact.</p><p>Join us on this journey as we build a future where sustainable travel is not just a choice, but a delightful and effortless experience for everyone.</p>",
+    title: "ROOL's Mission: Making Sustainable Travel a Reality",
+    excerpt: "Learn how VerveNxt is pioneering solutions to make EV ownership seamless and contribute to a greener planet through the ROOL app.",
+    content: "<p>Our core mission at VerveNxt is to accelerate the transition to sustainable transportation. We believe that electric vehicles are a cornerstone of this transition, but their adoption can be hindered by complexities in the charging ecosystem. That's where ROOL comes in.</p><h2>Simplifying the Complex</h2><p>ROOL is designed to be the single point of contact for all EV charging needs. By aggregating multiple charging networks into one intuitive platform, we eliminate the need for users to juggle various apps and payment methods. This simplification is key to making EV ownership more attractive and less daunting for a wider audience.</p><h2>Promoting Green Energy</h2><p>Beyond convenience, ROOL aims to guide users towards charging stations powered by renewable energy sources whenever possible. We are also exploring features that will allow users to track their carbon footprint reduction and understand their positive environmental impact.</p><p>Join us on this journey as we build a future where sustainable travel is not just a choice, but a delightful and effortless experience for everyone.</p>",
     author: "John Smith",
     date: "May 28, 2025",
     category: "Sustainability",
     imageUrl: "/images/blog/sustainable-travel.jpg",
-    slug: "unad-mission-sustainability"
+    slug: "rool-mission-sustainability"
   },
   {
     id: 4,
     title: "Top 5 Benefits of Using an EV Charging Aggregator App",
-    excerpt: "Tired of juggling multiple apps? An aggregator like UNAD simplifies your charging experience. Here's how...",
-    content: "<p>Electric vehicle (EV) charging aggregator apps like UNAD are revolutionizing how EV drivers find and use charging stations. Instead of managing multiple accounts and apps for different charging networks, an aggregator provides a unified solution. Here are the top 5 benefits:</p><ol><li><strong>One App for All Networks:</strong> Access a vast network of charging stations from various providers through a single interface. No more app-switching!</li><li><strong>Real-Time Availability and Status:</strong> Get live updates on charger availability, type, and operational status before you arrive, saving time and frustration.</li><li><strong>Simplified Payments:</strong> Link your payment method once and pay seamlessly across different networks, often with integrated payment systems.</li><li><strong>Efficient Route Planning:</strong> Many aggregators offer route planning features that incorporate necessary charging stops, making long-distance EV travel easier.</li><li><strong>Personalized Experience:</strong> Save favorite stations, view charging history, and sometimes even get recommendations based on your vehicle and preferences.</li></ol><p>UNAD aims to deliver all these benefits and more, ensuring that your EV charging experience is as smooth as your drive.</p>",
+    excerpt: "Tired of juggling multiple apps? An aggregator like ROOL simplifies your charging experience. Here's how...",
+    content: "<p>Electric vehicle (EV) charging aggregator apps like ROOL are revolutionizing how EV drivers find and use charging stations. Instead of managing multiple accounts and apps for different charging networks, an aggregator provides a unified solution. Here are the top 5 benefits:</p><ol><li><strong>One App for All Networks:</strong> Access a vast network of charging stations from various providers through a single interface. No more app-switching!</li><li><strong>Real-Time Availability and Status:</strong> Get live updates on charger availability, type, and operational status before you arrive, saving time and frustration.</li><li><strong>Simplified Payments:</strong> Link your payment method once and pay seamlessly across different networks, often with integrated payment systems.</li><li><strong>Efficient Route Planning:</strong> Many aggregators offer route planning features that incorporate necessary charging stops, making long-distance EV travel easier.</li><li><strong>Personalized Experience:</strong> Save favorite stations, view charging history, and sometimes even get recommendations based on your vehicle and preferences.</li></ol><p>ROOL aims to deliver all these benefits and more, ensuring that your EV charging experience is as smooth as your drive.</p>",
     author: "Alex Green",
     date: "May 15, 2025",
     category: "EV Lifestyle",
@@ -440,7 +440,7 @@ const blogPostsData = [
   {
     id: 5,
     title: "Navigating Range Anxiety: Tips for New EV Owners",
-    excerpt: "Worried about running out of charge? We share practical tips and how UNAD helps you drive with confidence.",
+    excerpt: "Worried about running out of charge? We share practical tips and how ROOL helps you drive with confidence.",
     content: "<p>Range anxiety is a common concern for new electric vehicle (EV) owners. However, with a bit of planning and the right tools, it's easily managed. Here are some tips:...</p>",
     author: "Sarah Miller",
     date: "June 5, 2025",
@@ -687,7 +687,7 @@ const BlogPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-gradient mb-3">VerveNxt Insights</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Your hub for EV news, sustainability tips, and UNAD app updates.
+            Your hub for EV news, sustainability tips, and ROOL app updates.
           </p>
         </div>
       </header>

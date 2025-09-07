@@ -31,7 +31,7 @@ const FeaturesSection = () => {
     {
       icon: Route,
       title: "Smart Route Planning",
-      description: "Plan your long-distance trips with confidence. UNAD automatically adds charging stops to your route.",
+      description: "Plan your long-distance trips with confidence. ROOL automatically adds charging stops to your route.",
       image: "Route planning interface showing optimal charging stops along a long-distance journey",
       color: "from-orange-500 to-red-500"
     },

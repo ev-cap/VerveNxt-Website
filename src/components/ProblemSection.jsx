@@ -45,7 +45,7 @@ const ProblemSection = () => {
             The EV Charging <span className="text-gradient">Hassle Ends Here</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We understand the frustrations EV drivers face every day. That's why we built UNAD to solve these real problems.
+            We understand the frustrations EV drivers face every day. That's why we built ROOL to solve these real problems.
           </p>
         </motion.div>
 
@@ -83,7 +83,7 @@ const ProblemSection = () => {
           className="text-center mt-16"
         >
           <div className="inline-block bg-gradient-to-r from-green-500 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold">
-            ✨ UNAD solves all of these problems in one beautiful app
+            ✨ ROOL solves all of these problems in one beautiful app
           </div>
         </motion.div>
       </div>

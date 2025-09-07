@@ -14,7 +14,7 @@ const PrivacyPage = () => {
         <div className="container mx-auto max-w-4xl bg-white rounded-xl shadow-lg px-6 py-10">
           <article className="max-w-none">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              At VerveNxt Technology ("VerveNxt", "we", "us", or "our"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website (vervenxt.com) and our mobile applications, including UNAD, available on Android and iOS platforms.
+              At VerveNxt Technology ("VerveNxt", "we", "us", or "our"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website (vervenxt.com) and our mobile applications, including ROOL, available on Android and iOS platforms.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Information We Collect</h2>

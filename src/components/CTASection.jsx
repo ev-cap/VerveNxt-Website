@@ -21,16 +21,16 @@ const CTASection = () => {
     }
 
     // Store email in localStorage
-    const existingEmails = JSON.parse(localStorage.getItem('unadWaitlist') || '[]');
+    const existingEmails = JSON.parse(localStorage.getItem('roolWaitlist') || '[]');
     if (!existingEmails.includes(email)) {
       existingEmails.push(email);
-      localStorage.setItem('unadWaitlist', JSON.stringify(existingEmails));
+      localStorage.setItem('roolWaitlist', JSON.stringify(existingEmails));
     }
 
     setIsSubmitted(true);
     toast({
-      title: "Welcome to the UNAD Family! 🎉",
-      description: "You're now on our exclusive waitlist. We'll notify you the moment UNAD is available!"
+      title: "Welcome to the ROOL Family! 🎉",
+      description: "You're now on our exclusive waitlist. We'll notify you the moment ROOL is available!"
     });
 
     setTimeout(() => {
@@ -75,7 +75,7 @@ const CTASection = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-12 leading-relaxed">
-            Be the first to experience the future of EV charging. Sign up for exclusive updates, and we'll notify you the moment UNAD is available on the App Store and Google Play.
+            Be the first to experience the future of EV charging. Sign up for exclusive updates, and we'll notify you the moment ROOL is available on the App Store and Google Play.
           </p>
 
           {/* Email Signup Form */}
@@ -109,7 +109,7 @@ const CTASection = () => {
                   </Button>
                 </div>
                 <p className="text-white/70 text-sm">
-                  🔒 We respect your privacy. No spam, just exciting updates about UNAD.
+                  🔒 We respect your privacy. No spam, just exciting updates about ROOL.
                 </p>
               </form>
             ) : (
@@ -120,7 +120,7 @@ const CTASection = () => {
               >
                 <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-2">You're In! 🎉</h3>
-                <p className="text-white/90">Welcome to the UNAD family. We'll be in touch soon!</p>
+                <p className="text-white/90">Welcome to the ROOL family. We'll be in touch soon!</p>
               </motion.div>
             )}
           </motion.div>

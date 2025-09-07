@@ -47,7 +47,7 @@ const MissionSection = () => {
             </p>
             
             <p className="text-lg text-gray-600 mb-8">
-              UNAD is our first step towards a cleaner, greener planet for generations to come. We're not just building an app - we're building the infrastructure for a sustainable transportation revolution.
+              ROOL is our first step towards a cleaner, greener planet for generations to come. We're not just building an app - we're building the infrastructure for a sustainable transportation revolution.
             </p>
 
             <motion.div

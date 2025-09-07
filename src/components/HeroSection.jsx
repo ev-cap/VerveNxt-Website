@@ -48,7 +48,7 @@ const HeroSection = () => {
               transition={{ duration: 1, delay: 0.2 }}
               className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight"
             >
-              UNAD: EV Charging,{' '}
+              ROOL: EV Charging,{' '}
               <span className="text-yellow-300">Simplified</span>
             </motion.h1>
             
@@ -58,7 +58,7 @@ const HeroSection = () => {
               transition={{ duration: 1, delay: 0.4 }}
               className="text-xl text-white/90 mb-8 leading-relaxed"
             >
-              UNAD is the ultimate EV charging station aggregator, designed to make your charging experience seamless and delightful. Join us in making our planet a greener place, one charge at a time.
+              ROOL is the ultimate EV charging station aggregator, designed to make your charging experience seamless and delightful. Join us in making our planet a greener place, one charge at a time.
             </motion.p>
 
             <motion.div
@@ -98,7 +98,7 @@ const HeroSection = () => {
           >
             <div className="floating-animation">
               <img  
-                alt="UNAD mobile app interface showing EV charging stations on a map"
+                alt="ROOL mobile app interface showing EV charging stations on a map"
                 className="w-full max-w-md mx-auto rounded-3xl shadow-2xl"
                src="https://images.unsplash.com/photo-1696433370249-e88ab2b9f33b" />
             </div>

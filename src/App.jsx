@@ -24,7 +24,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogPage />} /> 
-              <Route path="/the-unad-app" element={<ComingSoonPage pageTitle="The UNAD App" />} />
+              <Route path="/the-rool-app" element={<ComingSoonPage pageTitle="The ROOL App" />} />
               <Route path="/our-mission" element={<ComingSoonPage pageTitle="Our Mission" />} />
               <Route path="/contact" element={<ComingSoonPage pageTitle="Contact Us" />} />
               <Route path="/careers" element={<ComingSoonPage pageTitle="Careers" />} />

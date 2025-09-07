@@ -27,18 +27,18 @@ const blogPosts = [
   },
   {
     id: "2",
-    title: "UNAD's Mission: Making Sustainable Travel a Reality",
-    excerpt: "Learn how VerveNxt is pioneering solutions to make EV ownership seamless and contribute to a greener planet through the UNAD app.",
+    title: "ROOL's Mission: Making Sustainable Travel a Reality",
+    excerpt: "Learn how VerveNxt is pioneering solutions to make EV ownership seamless and contribute to a greener planet through the ROOL app.",
     author: "John Smith",
     date: "June 5, 2025",
     category: "Sustainability",
     imageUrl: "A scenic view of a winding road through mountains with an EV driving on it",
-    slug: "unad-mission-sustainability"
+    slug: "rool-mission-sustainability"
   },
   {
     id: "3",
     title: "Top 5 Benefits of Using an EV Charging Aggregator App",
-    excerpt: "Tired of juggling multiple apps? An aggregator like UNAD simplifies your charging experience. Here's how...",
+    excerpt: "Tired of juggling multiple apps? An aggregator like ROOL simplifies your charging experience. Here's how...",
     author: "Alex Green",
     date: "May 30, 2025",
     category: "EV Lifestyle",
