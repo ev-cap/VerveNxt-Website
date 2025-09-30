@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '/our-mission', isRouterLink: true },
-      { name: 'Our Team', href: '/our-mission#team', isRouterLink: true }, // Assuming team is part of mission page
+      { name: 'About Us', href: '/about', isRouterLink: true },
+      { name: 'Our Team', href: '/about#team', isRouterLink: true },
       { name: 'Careers', href: '/careers', isRouterLink: true },
       { name: 'Press Kit', href: '/press', isRouterLink: true }
     ],
@@ -61,11 +61,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-400" />
-                <a href="tel:+91 91 3640 1982" className="text-gray-300 hover:text-green-400">+91 913 640 1982</a>
+                <a href="tel:+91 91 3640 1982" className="text-gray-300 hover:text-green-400">+91 9920 770 489</a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-green-400" />
-                <span className="text-gray-300">Mumbai, Maharashtra</span>
+                <span className="text-gray-300">Pune, Maharashtra, India</span>
               </div>
             </div>
           </motion.div>

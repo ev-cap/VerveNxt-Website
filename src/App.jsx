@@ -8,6 +8,7 @@ import ComingSoonPage from '@/pages/ComingSoonPage';
 import TermsPage from '@/pages/TermsPage';
 import PrivacyPage from '@/pages/PrivacyPage';
 import ContactPage from '@/pages/ContactPage';
+import AboutPage from '@/pages/AboutPage';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/contexts/AuthContext';
 
@@ -24,9 +25,9 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:slug" element={<BlogPage />} /> 
+              <Route path="/blog/:slug" element={<BlogPage />} />
               <Route path="/the-rool-app" element={<ComingSoonPage pageTitle="The ROOL App" />} />
-              <Route path="/our-mission" element={<ComingSoonPage pageTitle="Our Mission" />} />
+              <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/careers" element={<ComingSoonPage pageTitle="Careers" />} />
               <Route path="/press" element={<ComingSoonPage pageTitle="Press Kit" />} />

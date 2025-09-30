@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { useToast } from '@/hooks/use-toast';
 
 const ContactPage = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -28,11 +26,8 @@ const ContactPage = () => {
       // Here you would typically send the form data to your backend
       // For now, we'll just simulate a successful submission
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for contacting us. We'll get back to you soon.",
-      });
+
+      alert("Thank you for contacting us. We'll get back to you soon.");
 
       // Reset form
       setFormData({
@@ -43,11 +38,7 @@ const ContactPage = () => {
         message: ''
       });
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive"
-      });
+      alert("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -189,8 +180,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Phone</h3>
-                      <p className="text-gray-600">+1 (555) 123-4567</p>
-                      <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM PST</p>
+                      <p className="text-gray-600">+91 9920 770 489</p>
+                      <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM IST</p>
                     </div>
                   </div>
 
@@ -203,8 +194,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900">Office</h3>
-                      <p className="text-gray-600">VerveNxt Technology</p>
-                      <p className="text-gray-600">San Francisco, CA</p>
+                      <p className="text-gray-600">VerveNxt Solutions Private Limited</p>
+                      <p className="text-gray-600">Pune, Maharashtra, India</p>
                     </div>
                   </div>
                 </div>
