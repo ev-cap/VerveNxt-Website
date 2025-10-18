@@ -17,6 +17,7 @@ const Header = () => {
     { name: 'The ROOL App', href: '/the-rool-app', type: 'route' },
     { name: 'Our Mission', href: '/our-mission', type: 'route' },
     { name: 'Blog', href: '/blog', type: 'route' },
+    { name: 'Docs', href: '/docs', type: 'route' },
     { name: 'Contact', href: '/contact', type: 'route' }
   ];
 

@@ -9,6 +9,7 @@ import TermsPage from '@/pages/TermsPage';
 import PrivacyPage from '@/pages/PrivacyPage';
 import ContactPage from '@/pages/ContactPage';
 import AboutPage from '@/pages/AboutPage';
+import DocsPage from '@/pages/DocsPage';
 import Footer from '@/components/Footer';
 import { AuthProvider } from '@/contexts/AuthContext';
 
@@ -33,7 +34,8 @@ function App() {
               <Route path="/press" element={<ComingSoonPage pageTitle="Press Kit" />} />
               <Route path="/pricing" element={<ComingSoonPage pageTitle="Pricing" />} />
               <Route path="/api" element={<ComingSoonPage pageTitle="API Access" />} />
-              <Route path="/help" element={<ComingSoonPage pageTitle="Help Center" />} />
+              <Route path="/help" element={<DocsPage />} />
+              <Route path="/docs" element={<DocsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="/terms" element={<TermsPage />} />
             </Routes>
