@@ -20,7 +20,7 @@ function App() {
         v7_startTransition: true,
         v7_relativeSplatPath: true 
       }}>
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50 flex flex-col">
           <Header />
           <main className="flex-grow">
             <Routes>

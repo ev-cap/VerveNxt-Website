@@ -102,7 +102,7 @@ const CTASection = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg font-semibold rounded-2xl whitespace-nowrap"
+                    className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-2xl whitespace-nowrap"
                   >
                     Join Waitlist
                     <ArrowRight className="ml-2 w-5 h-5" />

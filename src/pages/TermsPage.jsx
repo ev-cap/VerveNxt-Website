@@ -4,7 +4,7 @@ const TermsPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Header */}
-      <div className="bg-gradient-to-r from-indigo-500 to-cyan-600 py-20 text-center text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-cyan-500 py-20 text-center text-white">
         <h1 className="text-5xl font-bold mb-2">Terms of Use</h1>
         <p className="text-lg">Last updated: June 19, 2025</p>
       </div>

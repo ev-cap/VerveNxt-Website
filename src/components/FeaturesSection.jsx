@@ -26,21 +26,21 @@ const FeaturesSection = () => {
       title: "Seamless In-App Payments",
       description: "Link your payment method once and pay for charges across different networks with a single tap.",
       image: "Mobile payment interface showing secure one-tap payment for EV charging",
-      color: "from-purple-500 to-pink-500"
+      color: "from-blue-600 to-indigo-600"
     },
     {
       icon: Route,
       title: "Smart Route Planning",
       description: "Plan your long-distance trips with confidence. ROOL automatically adds charging stops to your route.",
       image: "Route planning interface showing optimal charging stops along a long-distance journey",
-      color: "from-orange-500 to-red-500"
+      color: "from-cyan-500 to-teal-500"
     },
     {
       icon: Heart,
       title: "Personalized Experience",
       description: "Save your favorite stations, track your charging history, and monitor your environmental impact.",
       image: "Personalized dashboard showing favorite charging stations and charging history",
-      color: "from-pink-500 to-rose-500"
+      color: "from-sky-500 to-blue-500"
     },
     {
       icon: BarChart3,

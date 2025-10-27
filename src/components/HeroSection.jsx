@@ -49,7 +49,7 @@ const HeroSection = () => {
               className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight"
             >
               ROOL: EV Charging,{' '}
-              <span className="text-yellow-300">Simplified</span>
+              <span className="text-green-400">Simplified</span>
             </motion.h1>
             
             <motion.p
@@ -69,7 +69,7 @@ const HeroSection = () => {
             >
               <Button
                 size="lg"
-                className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-full pulse-glow"
+                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-full pulse-glow"
                 onClick={() => {
                   const ctaSection = document.getElementById('contact');
                   if (ctaSection) ctaSection.scrollIntoView({ behavior: 'smooth' });
@@ -81,7 +81,7 @@ const HeroSection = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-purple-600 hover:bg-white hover:text-purple-600 px-8 py-4 text-lg font-semibold rounded-full"
+                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-full"
                 onClick={scrollToFeatures}
               >
                 <Play className="mr-2 w-5 h-5" />
@@ -106,12 +106,12 @@ const HeroSection = () => {
             <motion.div
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -top-10 -right-10 w-20 h-20 bg-yellow-300/30 rounded-full blur-xl"
+              className="absolute -top-10 -right-10 w-20 h-20 bg-cyan-300/30 rounded-full blur-xl"
             />
             <motion.div
               animate={{ scale: [1.1, 1, 1.1] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="absolute -bottom-10 -left-10 w-32 h-32 bg-green-300/20 rounded-full blur-xl"
+              className="absolute -bottom-10 -left-10 w-32 h-32 bg-green-400/20 rounded-full blur-xl"
             />
           </motion.div>
         </div>

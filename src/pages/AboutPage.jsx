@@ -102,7 +102,7 @@ const AboutPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl"
+              className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Why We Do It</h3>
               <p className="text-gray-700 leading-relaxed">

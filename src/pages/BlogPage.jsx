@@ -513,7 +513,7 @@ const CommentsSection = ({ postId }) => {
         Comments ({comments.length})
       </h2>
       {user ? (
-        <form onSubmit={handleCommentSubmit} className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-md">
+        <form onSubmit={handleCommentSubmit} className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl shadow-md">
           <div className="flex items-start space-x-4">
             {user.avatar ? (
               <img 
@@ -522,7 +522,7 @@ const CommentsSection = ({ postId }) => {
                 className="w-12 h-12 rounded-full object-cover"
               />
             ) : (
-              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold text-lg">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-semibold text-lg">
                 {user.name.charAt(0).toUpperCase()}
               </div>
             )}
@@ -543,7 +543,7 @@ const CommentsSection = ({ postId }) => {
       ) : (
         <div className="mb-8 p-6 bg-gray-100 rounded-xl text-center">
           <p className="text-gray-700 mb-3 text-lg">Want to join the conversation?</p>
-          <Button onClick={handleSignIn} className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold py-2 px-6 rounded-lg">
+          <Button onClick={handleSignIn} className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-2 px-6 rounded-lg">
             Sign In to Comment
           </Button>
           <p className="text-xs text-gray-500 mt-2">(Mock Sign-In: Supabase integration needed for real authentication)</p>
@@ -565,7 +565,7 @@ const CommentsSection = ({ postId }) => {
                 className="w-10 h-10 rounded-full object-cover border-2 border-blue-200"
               />
             ) : (
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold text-sm">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center text-white font-semibold text-sm">
                 {c.author.charAt(0).toUpperCase()}
               </div>
             )}
@@ -742,7 +742,7 @@ const BlogPage = () => {
                   }}
                   className={`block p-4 rounded-lg transition-all duration-200 ease-in-out group
                     ${selectedPost?.id === post.id 
-                      ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg transform scale-105' 
+                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg transform scale-105' 
                       : 'bg-gray-50 hover:bg-gray-100 text-gray-700 hover:shadow-md'}`}
                 >
                   <h3 className={`font-semibold text-lg mb-1 group-hover:text-blue-600 ${selectedPost?.id === post.id ? 'text-white' : 'text-gray-800'}`}>{post.title}</h3>

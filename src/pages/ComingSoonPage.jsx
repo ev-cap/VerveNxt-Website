@@ -14,10 +14,10 @@ const ComingSoonPage = ({ pageTitle = "This Page" }) => {
         className="text-center"
       >
         <div className="inline-block p-4 bg-white/10 rounded-full mb-8">
-          <Zap className="w-16 h-16 text-yellow-400" />
+          <Zap className="w-16 h-16 text-green-400" />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
-          {pageTitle} is <span className="text-yellow-400">Coming Soon!</span>
+          {pageTitle} is <span className="text-green-400">Coming Soon!</span>
         </h1>
         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-2xl mx-auto">
           We're working hard to bring you an amazing experience. This section of our website is currently under construction. Stay tuned for exciting updates!
@@ -29,7 +29,7 @@ const ComingSoonPage = ({ pageTitle = "This Page" }) => {
           transition={{ duration: 0.5, delay: 0.3, type: "spring", stiffness: 150 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Button asChild size="lg" className="bg-yellow-400 text-slate-900 hover:bg-yellow-500 px-8 py-4 text-lg font-semibold rounded-full">
+          <Button asChild size="lg" className="bg-green-400 text-slate-900 hover:bg-green-500 px-8 py-4 text-lg font-semibold rounded-full">
             <Link to="/">
               <ArrowLeft className="mr-2 w-5 h-5" />
               Go Back Home

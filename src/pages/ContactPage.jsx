@@ -47,7 +47,7 @@ const ContactPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Header */}
-      <div className="bg-gradient-to-r from-indigo-500 to-cyan-600 py-20 text-center text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-cyan-500 py-20 text-center text-white">
         <h1 className="text-5xl font-bold mb-2">Contact Us</h1>
         <p className="text-lg">We'd love to hear from you</p>
       </div>
@@ -146,7 +146,7 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-indigo-500 to-cyan-600 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-green-500 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>

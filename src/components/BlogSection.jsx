@@ -51,7 +51,7 @@ const BlogSection = ({ onHomepage = false }) => {
   const postsToDisplay = onHomepage ? blogPosts.slice(0, 3) : blogPosts;
 
   return (
-    <section id="blog" className={`py-20 ${onHomepage ? 'bg-gradient-to-br from-blue-50 to-indigo-50' : 'bg-white'}`}>
+    <section id="blog" className={`py-20 ${onHomepage ? 'bg-gradient-to-br from-blue-50 to-cyan-50' : 'bg-white'}`}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

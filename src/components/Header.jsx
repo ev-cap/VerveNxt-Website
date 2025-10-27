@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Zap, LogIn, UserCircle } from 'lucide-react';
+import { Menu, X, LogIn, UserCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/contexts/AuthContext';
@@ -71,10 +71,11 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-              <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold text-gradient">VerveNxt</span>
+              <img
+                src="/images/VervenxtLogoH.png"
+                alt="VerveNxt Logo"
+                className="h-24"
+              />
             </motion.div>
           </Link>
 

@@ -9,19 +9,19 @@ const ProblemSection = () => {
       icon: MapPin,
       title: "Tired of Juggling Apps?",
       description: "Stop switching between multiple apps to find a compatible charging station.",
-      color: "from-red-500 to-pink-500"
+      color: "from-blue-600 to-indigo-600"
     },
     {
       icon: Clock,
       title: "Wasting Time at Stations?",
       description: "No more uncertainty. Check station availability and charging speeds in real-time.",
-      color: "from-orange-500 to-yellow-500"
+      color: "from-cyan-500 to-sky-500"
     },
     {
       icon: CreditCard,
       title: "Confusing Payment Methods?",
       description: "Pay seamlessly through a single, secure app for any station in our network.",
-      color: "from-blue-500 to-purple-500"
+      color: "from-blue-500 to-cyan-500"
     },
     {
       icon: AlertCircle,

@@ -658,7 +658,7 @@ const DocsPage = () => {
     <div className="flex flex-col min-h-screen bg-slate-50">
       {/* Hero Header */}
       <motion.div
-        className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 py-20 text-center text-white relative overflow-hidden"
+        className="bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 py-20 text-center text-white relative overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}

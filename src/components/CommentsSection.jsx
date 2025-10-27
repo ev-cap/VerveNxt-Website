@@ -58,7 +58,7 @@ const CommentsSection = ({ postId }) => {
         Comments ({comments.length})
       </h2>
       {user ? (
-        <form onSubmit={handleCommentSubmit} className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-md">
+        <form onSubmit={handleCommentSubmit} className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl shadow-md">
           <div className="flex items-start space-x-4">
             <img 
               src={user.avatar} 
@@ -82,7 +82,7 @@ const CommentsSection = ({ postId }) => {
       ) : (
         <div className="mb-8 p-6 bg-gray-100 rounded-xl text-center">
           <p className="text-gray-700 mb-3 text-lg">Want to join the conversation?</p>
-          <Button onClick={signInWithGoogle} className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold py-2 px-6 rounded-lg">
+          <Button onClick={signInWithGoogle} className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold py-2 px-6 rounded-lg">
             Sign In with Google
           </Button>
         </div>

@@ -43,11 +43,12 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <Link to="/" className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold">VerveNxt</span>
+            <Link to="/" className="flex items-center mb-6">
+              <img
+                src="/images/VervenxtLogoH.png"
+                alt="VerveNxt Logo"
+                className="h-16"
+              />
             </Link>
             
             <p className="text-gray-300 mb-6 leading-relaxed">
