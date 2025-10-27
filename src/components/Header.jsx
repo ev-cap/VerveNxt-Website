@@ -62,7 +62,7 @@ const Header = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 left-0 right-0 z-50 glass-effect"
+      className="fixed top-0 left-0 right-0 z-50 bg-black"
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -85,7 +85,7 @@ const Header = () => {
                 <Link
                   to={item.href}
                   onClick={() => handleNavClick(item)}
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-white hover:text-blue-400 font-medium transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -102,9 +102,9 @@ const Header = () => {
                     className="w-6 h-6 rounded-full object-cover"
                   />
                 ) : (
-                  <UserCircle className="w-6 h-6 text-blue-600" />
+                  <UserCircle className="w-6 h-6 text-white" />
                 )}
-                <span className="text-sm font-medium text-gray-700">{user.name.split(' ')[0]}</span>
+                <span className="text-sm font-medium text-white">{user.name.split(' ')[0]}</span>
                 <Button variant="outline" size="sm" onClick={handleSignOut} className="rounded-full">Sign Out</Button>
               </div>
             ) : (
@@ -118,7 +118,7 @@ const Header = () => {
           </div>
 
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
