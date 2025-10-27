@@ -45,9 +45,9 @@ const Footer = () => {
           >
             <Link to="/" className="flex items-center mb-6">
               <img
-                src="/images/VervenxtLogoH.png"
+                src="/images/VervenxtLogo.png"
                 alt="VerveNxt Logo"
-                className="h-16"
+                className="h-28"
               />
             </Link>
             
